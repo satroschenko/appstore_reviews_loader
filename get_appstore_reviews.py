@@ -4,8 +4,7 @@ import csv
 import sys
 
 
-countries = {    
-    'ru',   # Russia
+countries = {        
     'ar',   # Argentina
     'au',   # Australia
     'be',   # Belgium
@@ -40,9 +39,51 @@ countries = {
     'mx',   # Mexico
     'nl',   # Netherlands
     'nz',   # New Zealand
-
-
-    'us'    # United States
+    'no',   # Norway
+    'at',   # Austria
+    'pk',   # Pakistan
+    'pa',   # Panama
+    'pe',   # Peru
+    'ph',   # Philippines
+    'pl',   # Poland
+    'pt',   # Portugal
+    'qa',   # Qatar
+    'ro',   # Romania
+    'ru',   # Russia
+    'sa',   # Saudi Arabia
+    'ch',   # Switzerland
+    'sg',   # Singapore
+    'sk',   # Slovakia
+    'si',   # Slovenia
+    'za',   # South Africa
+    'lk',   # Sri Lanka
+    'se',   # Sweden
+    'tw',   # Taiwan
+    'th',   # Thailand
+    'tr',   # Turkey
+    'ae',   # United Arab Emirates
+    'gb',   # United Kingdom
+    'us',   # United States
+    've',   # Venezuela
+    'vn',   # Vietnam
+    'jp',   # Japan
+    'do',   # Dominican Republic
+    'ec',   # Ecuador
+    'eg',   # Egypt
+    'ee',   # Estonia
+    'hn',   # Honduras
+    'jm',   # Jamaica
+    'kz',   # Kazakhstan
+    'lv',   # Latvia
+    'lt',   # Lithuania
+    'mo',   # Macao
+    'mt',   # Malta
+    'md',   # Moldova
+    'ni',   # Nicaragua
+    'py',   # Paraguay
+    'uy',   # Uruguay
+    'by',   # Belarus
+    'ua'    # Ukraine
 }
 
 def get_reviews(appId, country):
