@@ -4,10 +4,27 @@ import csv
 import sys
 
 
-countries = {
-    'fr', # France
-    'ru', # Russia
-    'us' # United States
+countries = {    
+    'ru',   # Russia
+    'ar',   # Argentina
+    'au',   # Australia
+    'be',   # Belgium
+    'br',   # Brazil
+    'ca',   # Canada
+    'cl',   # Chile
+    'cn',   # China
+    'co',   # Colombia
+    'cr',   # Costa Rica
+    'hr',   # Croatia
+    'cz',   # Czech Republic
+    'dk',   # Denmark
+    'de',   # Germany
+    'sv',   # El Salvador
+    'es',   # Spain
+    'fi',   # Finland
+    'fr',   # France
+
+    'us'    # United States
 }
 
 def get_reviews(appId, country):
@@ -119,6 +136,8 @@ for countryCode in countries:
     reviews = get_reviews(app_id, countryCode)
 
     all_reviews.extend(reviews)
+
+print('Downloaded %d reviews. Writing in file...' % len(all_reviews))
 
 csvTitles = [
     u'Id'.encode("utf-8"),
