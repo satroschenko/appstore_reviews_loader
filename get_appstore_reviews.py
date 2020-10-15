@@ -1,7 +1,8 @@
 import requests
 import xml.etree.ElementTree as et
 import csv
-import io
+import sys
+
 
 countries = {
     'fr', # France
@@ -98,11 +99,24 @@ def get_review_from_entry(entry):
     return ''
 
 
+
+
+
+if len(sys.argv) < 2:
+    print("Use: python get_appstore_reviews.py <app_id>")
+    exit(1)
+
+app_id = sys.argv[1]
+if app_id == None:
+    print("Use: python get_appstore_reviews.py <app_id>")
+    exit(1)
+
+
 all_reviews = []
 
 for countryCode in countries:
 
-    reviews = get_reviews('714825126', countryCode)
+    reviews = get_reviews(app_id, countryCode)
 
     all_reviews.extend(reviews)
 
