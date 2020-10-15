@@ -23,6 +23,24 @@ countries = {
     'es',   # Spain
     'fi',   # Finland
     'fr',   # France
+    'gr',   # Greece
+    'gt',   # Guatemala    
+    'hk',   # Hong Kong
+    'hu',   # Hungary   
+    'in',   # India   
+    'id',   # Indonesia   
+    'ie',   # Ireland   
+    'il',   # Israel   
+    'it',   # Italia
+    'kr',   # Korea
+    'kw',   # Kuwait
+    'lb',   # Lebanon
+    'lu',   # Luxembourg
+    'my',   # Malaysia
+    'mx',   # Mexico
+    'nl',   # Netherlands
+    'nz',   # New Zealand
+
 
     'us'    # United States
 }
