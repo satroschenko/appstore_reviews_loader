@@ -165,13 +165,13 @@ def get_author_from_entry(entry):
     if name == None:
         return ''
     
-    return name.text
+    return name.text.replace('\n', '.')
 
 def get_review_from_entry(entry):
 
     for review in entry.findall('{http://www.w3.org/2005/Atom}content'):
         if review.get('type') == 'text':
-            return review.text
+            return review.text.replace('\n', '.')
 
     return ''
 
