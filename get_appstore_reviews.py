@@ -83,7 +83,8 @@ countries = {
     'py',   # Paraguay
     'uy',   # Uruguay
     'by',   # Belarus
-    'ua'    # Ukraine
+    'ua',   # Ukraine
+    'al'    # Albania
 }
 
 def get_reviews(appId, country):
